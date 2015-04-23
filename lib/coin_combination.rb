@@ -21,7 +21,7 @@ class Float
     if change >= 10
       num_of_dimes = ((change / 10).to_i().to_s())
       change = change%10
-      total_change = total_change + num_of_dimes + " Dime"
+      total_change = total_change + " " + num_of_dimes + " Dime"
      if num_of_dimes > "1"
        total_change = total_change + "s "
      end
@@ -39,7 +39,7 @@ class Float
     if change >= 1
       num_of_pennies = ((change / 1).to_i().to_s())
       change = change%1
-      total_change = total_change + num_of_pennies
+      total_change = total_change + " " + num_of_pennies
      if num_of_pennies > "1"
         total_change = total_change + " Pennies"
       elsif num_of_pennies == "1"
